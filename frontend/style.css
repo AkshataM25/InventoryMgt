@@ -1,0 +1,190 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+.bg-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/smart-warehouse-inventory-management-system-concept-manager-using-digital-tablet-showing-warehouse-software-management-dashboard-blurred-warehouse-as-background_114016-20887.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.content{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 350px;
+    /* margin-left: 340px; */
+    justify-content: center;
+  align-items: center;
+  /* margin-top: 120px; */
+  margin-left: -450px;
+}
+
+.login-container {
+    /* width: 100%; */
+    width: 420px;
+    padding: 2rem;
+    background-color: rgb(252, 248, 248,0.85);
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+/* .login-container:hover{
+    border: 10px black solid;
+} */
+
+.login-container h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.login-container p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 0.85rem;
+    color: #555;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.2rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.password-field {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1.5rem;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #777;
+}
+
+.social-login {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 0.5rem;
+}
+
+.social-button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+/* .google-login {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.facebook-login {
+    background-color: #4267b2;
+    color: #fff;
+} */
+
+.social-button:hover {
+    opacity: 0.9;
+}
+
+.sign-up {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.sign-up a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}

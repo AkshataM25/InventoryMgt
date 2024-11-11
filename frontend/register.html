@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="interface2.css">
+  <script>
+    function resetForm() {
+      // Select the form element and reset it
+      document.querySelector("form").reset();
+    }
+  </script>
+</head>
+<body>
+    <div class="bg-img">
+  <div class="container">
+    <!-- Title -->
+    <div class="title">Registration</div>
+    <div class="content">
+      <!-- Registration Form -->
+      <form action="#" method="POST">
+        <div class="user-details">
+          <!-- First Name -->
+          <div class="input-box">
+            <label for="first-name" class="details">First Name</label>
+            <input type="text" id="first-name" name="firstName" placeholder="Enter your first name" required>
+          </div>
+          
+          <!-- Last Name -->
+          <div class="input-box">
+            <label for="last-name" class="details">Last Name</label>
+            <input type="text" id="last-name" name="lastName" placeholder="Enter your last name" required>
+          </div>
+          
+          <!-- Email -->
+          <div class="input-box">
+            <label for="email" class="details">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          
+          <!-- Phone Number -->
+          <div class="input-box">
+            <label for="phone" class="details">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your number" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" required>
+          </div>
+          
+          <!-- Password -->
+          <div class="input-box">
+            <label for="password" class="details">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" minlength="6" required>
+          </div>
+          
+          <!-- Confirm Password -->
+          <div class="input-box">
+            <label for="confirm-password" class="details">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm your password" minlength="6" required>
+          </div>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="button">
+          <input type="submit" value="Register">
+          <input type="button" value="Reset" onclick="resetForm()">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
